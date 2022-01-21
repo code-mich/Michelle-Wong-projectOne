@@ -1,0 +1,32 @@
+// main font = Josefin Sans
+// body text font = Barlow
+
+// base font size = 1
+
+// accents = sunflower yellow
+// $accents = #FFD300
+
+// secondary accent = black
+// secondaryAccents = #0F0F0F
+
+// main text = white
+// $mainText = #FFFFFF
+
+// primary background color = pine
+// $primaryBody = #2B331B
+
+// secondary background color = almost black
+// $secondaryBody = #171B0E
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@400;600;700&display=swap');
+
+$mainFont: "Josefin Sans, sans-serif";
+$bodyFont: "Barlow, sans-serif";
+
+$baseFontSize: 2rem;
+
+$accents: #FFD300;
+$secondaryAccents: #0F0F0F;
+$textColor: #FFFFFF;
+$primaryBody: #2B331B;
+$secondaryBody: #171B0E;
