@@ -6,21 +6,167 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Restaurant Mall</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/f2dd5a1fe8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- font awesome icon names -->
-    <!-- home:
-            map-marker-alt
-            users
-            file
-            phone
+    <!-- HEADER & NAV -->
+    <header>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="headerContainer">
+                <h1>
+                    The <span>restaurant</span> mall
+                </h1>
+                <div class="headerImg">
+                    <img src="./the-restaurant-mall-assets/home-box-header.png" alt="
+                    Picture of guests seated at a restaurant, with a plate of food at the forefront">
+                </div> <!-- end of .headerImg -->
+            </div> <!-- end of .headerContainer -->
+        </div> <!-- end of .wrapper -->
+    </header>
 
-        contact:
-            facebook-f
-            instagram
-            twitter
-            whatsapp -->
+    <!-- MAIN -->
+    <main>
+        <!-- ABOUT SECTION -->
+        <section class="about" id="about">
+            <div class="wrapper">
+                <div class="aboutContainer">
+                    <div class="aboutSegment">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <h2>Location</h2>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis
+                            mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat. </p>
+                    </div>
+                    <div class="aboutSegment">
+                        <i class="fas fa-users" aria-hidden="true"></i>
+                        <h2>Community</h2>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis
+                            mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat. </p>
+                    </div>
+                    <div class="aboutSegment">
+                        <i class="fas fa-file" aria-hidden="true"></i>
+                        <h2>Blog</h2>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis
+                            mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat. </p>
+                    </div>
+                    <div class="aboutSegment">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <h2>Get in touch</h2>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis
+                            mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat. </p>
+                    </div>
+                </div> <!-- end of .aboutContainer -->
+            </div> <!-- end of .wrapper -->
+        </section>
+
+        <!-- BURGER SECTION -->
+        <section class="burger">
+            <div class="wrapper">
+                <div class="burgerContainer">
+                    <div class="burgerSegment">
+                        <div class="burgerLeft">
+                            <img src="./the-restaurant-mall-assets/left-image.jpg" alt="Picture of burger and fries">
+                        </div> <!-- end of .burgerLeft -->
+                    </div> <!-- end of .burgerSegment -->
+                    <div class="burgerSegment">
+                        <h2>Best burgers</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare
+                            condimentum. Name suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex,
+                            porttitor nec iaculis at, consectetur vel</p>
+                        <button class="readMore">Read more</button>
+                    </div> <!-- end of .burgerSegment -->
+                    <div class="burgerSegment">
+                        <h2>Try something new</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare
+                            condimentum. Name suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex,
+                            porttitor nec iaculis at, consectetur vel</p>
+                        <button class="readMore">Read more</button>
+                    </div> <!-- end of .burgerSegment -->
+                    <div class="burgerSegment">
+                        <div class="burgerRight">
+                            <img src="./the-restaurant-mall-assets/right-image.jpg" alt="Picture of ">
+                        </div> <!-- end of .burgerRight -->
+                    </div> <!-- end of .burgerSegment -->
+                </div> <!-- end of .burgerContainer -->
+            </div> <!-- end of .wrapper -->
+        </section>
+
+        <!-- GIVEAWAY SECTION -->
+        <section class="giveaway">
+            <div class="wrapper">
+                <h2>Win a $100 gift card</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum.
+                    Name suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at,
+                    consectetur vel turpis. Vestibulum ultricies, felis in lacinia porttitor, tortor metus convallis
+                    augue, at fermentum diam erat nec quam.</p>
+                <button class="findOutMore">Find out more</button>
+            </div> <!-- end of .wrapper -->
+        </section>
+        <section class="storeImg">
+            <div class="storeContainer">
+                <img src="./the-restaurant-mall-assets/banner.jpg" alt="picture of a restaurant store front">
+            </div>
+        </section>
+
+        <!-- NATURE SECTION -->
+        <section class="nature">
+            <div class="wrapper">
+                <div class="natureContainer">
+                    <div class="natureImg">
+                        <img src="./the-restaurant-mall-assets/square-image.jpg"
+                            alt="people seated at tables at a restaurant with a nature aesthetic">
+                    </div> <!-- end of .natureImg -->
+                    <div class="natureText">
+                        <h2>Bringing nature in space</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit
+                            amet tempor nibh finibus et. Aenean eu enim justo. Vestibulum aliquam hendrerit molestie.
+                            Mauris malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit au
+                            porttitor pulvinar, tortor eros facilsis libero, vitae commodo nunc quam et ligula. Ut nec
+                            ipsum sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer id nisi
+                            nec nulla luctus lacinia non eu turpic. Etiam in ex imperdiet justo tincidunt egestas. Ut
+                            porttitor urna ac augue cursus tincidunt sit amet.</p>
+                        <button class="findOutMore">Find out more</button>
+                    </div> <!-- end of .natureText -->
+                </div> <!-- end of .natureContainer -->
+            </div> <!-- end of .wrapper -->
+        </section>
+
+        <!-- GALLERY SECTION -->
+        <section class="gallery">
+            <div class="wrapper">
+                <div class="galleryContainer">
+                    <div class="galleryImg">
+                        <img src="./the-restaurant-mall-assets/gallery-image-1.jpg"
+                            alt="picture of some hanging lights in a restaurant">
+                    </div> <!-- end of first .galleryImg -->
+                    <div class="galleryImg">
+                        <img src="./the-restaurant-mall-assets/gallery-image-2.jpg"
+                            alt="picture of a neon take away sign">
+                    </div> <!-- end of second .galleryImg -->
+                    <div class="galleryImg">
+                        <img src="./the-restaurant-mall-assets/gallery-image-3.jpg"
+                            alt="picture of bibimbap with an array of side dishes">
+                    </div> <!-- end of third .galleryImg -->
+                </div> <!-- end of .galleryContainer-->
+            </div> <!-- end of .wrapper -->
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Copyright © 2019 Juno College</p>
+    </footer>
+
+
 </body>
 
 </html>
