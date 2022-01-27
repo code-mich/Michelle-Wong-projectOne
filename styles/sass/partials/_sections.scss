@@ -5,20 +5,81 @@
         flex-direction: row;
         flex-wrap: wrap;
         .aboutSegment {
-            width: 50%;
+            // width: 50%;
+            width: calc(50% - 100px);
+            margin-left: 50px;
             padding: 50px 0;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            position: relative;
-            i {
-                display: absolute;
-                left: -50px;
+            h2 {
+                position: relative;
             }
+            // span {
+            //     position: absolute;
+            // }
             &:nth-child(odd) {
                 margin-right: 50px;
-                width: calc(50% - 50px);
+                width: calc(50% - 100px);
             }
         }
     }
 }
+.fa-stack {
+    left: -70px;
+    bottom: -70px;
+    font-size: 2.4rem;
+}
+
+.fa-stack-1x {
+    color: $secondaryBody;
+    z-index: 10;
+}
+
+.fa-stack-2x {
+    color: $accents;
+}
+
+
+// .aboutLocation::before {
+//     font-family: "Font Awesome 5 Free";
+//     font-weight: 900;
+//     content: "\f111";
+//     font-size: 4rem;
+//     position: absolute;
+//     left: -50px;
+//     color: $accents;
+// }
+
+// .aboutLocation::before {
+//     font-family: "Font Awesome 5 Free";
+//     font-weight: 900;
+//     content: "\f3c5";
+//     font-size: 2rem;
+//     position: absolute;
+//     left: -50px;
+//     color: $secondaryBody;
+//     z-index: 10;
+// }
+
+// .icon::before{
+//     background-color: $accents;
+//     border-radius: 50%;
+//     color: $secondaryBody;
+//     font-size: 2rem;
+//     width: 3rem;
+//     height: 3rem;
+//     text-align: center;
+// }
+
+// .fas {
+//     font-size: 3rem;
+//     color: $secondaryBody;
+//     background-color: $accents;
+//     padding: 13px;
+//     border-radius: 50%;
+//     width: 6rem;
+//     height: 6rem;
+//     text-align: center;
+//     line-height: 2rem;
+// }
