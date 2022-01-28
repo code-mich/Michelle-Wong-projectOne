@@ -8,7 +8,7 @@ section {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
         .aboutSegment {
             width: calc(50% - 100px);
             margin-left: 50px;
@@ -29,7 +29,7 @@ section {
 
 // FONT AWESOME
 .fa-stack {
-    left: -70px;
+    left: -73px;
     bottom: -70px;
     font-size: 2.4rem;
 }
@@ -66,6 +66,10 @@ section {
             &:nth-child(odd) {
                 margin-right: 50px;
                 width: calc(50% - 100px);
+                text-align: right;
+                button {
+                    align-self: flex-end;
+                }
             }
         }
     }
@@ -73,15 +77,36 @@ section {
         position: absolute;
         left: 0;
         top: -5%;
+        box-shadow: 30px 30px 0px -5px $accents;
     }
     .burgerRight {
         position: absolute;
         right: 0;
         bottom: -5%;
+        box-shadow: -30px 30px 0px -5px $accents;
     }
 }
 
 // GIVEAWAY STYLES
+.giveaway {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h2 {
+        color: $accents;
+        padding-top: 50px;
+    }
+    p {
+        width: 85%;
+    }
+}
+
+.storeImg {
+    padding: 0;
+}
 
 // NATURE STYLES
 .natureContainer {
@@ -91,10 +116,18 @@ section {
     justify-content: space-between;
     .natureImg {
         width: 25%;
+        display: flex;
+        align-items: center;
+        img {
+            box-shadow: -30px 30px 0px -5px $accents;
+        }
     }
     .natureText {
         width: calc(75% - 100px);
         margin-left: 100px;
+        h2 {
+            color: $accents;
+        }
     }
 }
 

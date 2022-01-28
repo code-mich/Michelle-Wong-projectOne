@@ -268,7 +268,7 @@ h4 {
 
 .wrapper {
   max-width: 1600px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -443,9 +443,9 @@ section {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .about .aboutContainer .aboutSegment {
   width: calc(50% - 100px);
@@ -469,7 +469,7 @@ section {
 }
 
 .fa-stack {
-  left: -70px;
+  left: -73px;
   bottom: -70px;
   font-size: 2.4rem;
 }
@@ -521,16 +521,52 @@ section {
 .burger .burgerContainer .burgerSegment:nth-child(odd) {
   margin-right: 50px;
   width: calc(50% - 100px);
+  text-align: right;
+}
+.burger .burgerContainer .burgerSegment:nth-child(odd) button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 .burger .burgerLeft {
   position: absolute;
   left: 0;
   top: -5%;
+  -webkit-box-shadow: 30px 30px 0px -5px #FFD300;
+          box-shadow: 30px 30px 0px -5px #FFD300;
 }
 .burger .burgerRight {
   position: absolute;
   right: 0;
   bottom: -5%;
+  -webkit-box-shadow: -30px 30px 0px -5px #FFD300;
+          box-shadow: -30px 30px 0px -5px #FFD300;
+}
+
+.giveaway .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.giveaway h2 {
+  color: #FFD300;
+  padding-top: 50px;
+}
+.giveaway p {
+  width: 85%;
+}
+
+.storeImg {
+  padding: 0;
 }
 
 .natureContainer {
@@ -549,10 +585,23 @@ section {
 }
 .natureContainer .natureImg {
   width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.natureContainer .natureImg img {
+  -webkit-box-shadow: -30px 30px 0px -5px #FFD300;
+          box-shadow: -30px 30px 0px -5px #FFD300;
 }
 .natureContainer .natureText {
   width: calc(75% - 100px);
   margin-left: 100px;
+}
+.natureContainer .natureText h2 {
+  color: #FFD300;
 }
 
 .gallery {
