@@ -54,35 +54,32 @@ section {
         flex-wrap: wrap;
         justify-content: space-between;
         .burgerSegment {
-            width: calc(50% - 50px);
+            width: calc(50% - 70px);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             }
         }
+    .burgerLeft {
+        position: relative;
+        top: -35%;
+        left: -12%;
+        box-shadow: 30px 30px 0px -7px $accents; 
     }
-    .burgerLeftFlex {
-        .burgerLeft {
-            position: absolute;
-            left: 0;
-            top: -5%;
-            img {
-                box-shadow: 30px 30px 0px -5px $accents;
-            }
-        }
+    .leftText {
+        text-align: right;
+        padding: 0 70px;
     }
-    .burgerRightFlex {
-        display: none;
-        .burgerRight {
-            position: absolute;
-            right: 0;
-            bottom: -5%;
-            img {
-                box-shadow: -30px 30px 0px -5px $accents;
-            }
-        }
+    .burgerRight {
+        position: relative;
+        bottom: -35%;
+        right: -12%;
+        box-shadow: -30px 30px 0px -7px $accents;
     }
-
+    .rightText {
+        padding: 0 70px;
+    }
+}
     
 // GIVEAWAY STYLES
 .giveaway {
@@ -116,7 +113,7 @@ section {
         display: flex;
         align-items: center;
         img {
-            box-shadow: -30px 30px 0px -5px $accents;
+            box-shadow: -30px 30px 0px -7px $accents;
         }
     }
     .natureText {
