@@ -484,7 +484,7 @@ section {
 }
 
 .fa-stack {
-  left: -73px;
+  left: -65px;
   bottom: -70px;
   font-size: 2.4rem;
 }
@@ -517,7 +517,7 @@ section {
           justify-content: space-between;
 }
 .burger .burgerContainer .burgerSegment {
-  width: calc(50% - 70px);
+  width: 44%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,24 +531,24 @@ section {
 }
 .burger .burgerLeft {
   position: relative;
-  top: -35%;
-  left: -12%;
-  -webkit-box-shadow: 30px 30px 0px -7px #FFD300;
-          box-shadow: 30px 30px 0px -7px #FFD300;
+  top: -30%;
+  left: 0%;
+  -webkit-box-shadow: 25px 25px 0px -7px #FFD300;
+          box-shadow: 25px 25px 0px -7px #FFD300;
 }
 .burger .leftText {
   text-align: right;
-  padding: 0 70px;
+  padding-left: 25%;
 }
 .burger .burgerRight {
   position: relative;
-  bottom: -35%;
-  right: -12%;
-  -webkit-box-shadow: -30px 30px 0px -7px #FFD300;
-          box-shadow: -30px 30px 0px -7px #FFD300;
+  bottom: -30%;
+  right: 0%;
+  -webkit-box-shadow: -25px 25px 0px -7px #FFD300;
+          box-shadow: -25px 25px 0px -7px #FFD300;
 }
 .burger .rightText {
-  padding: 0 70px;
+  padding-right: 25%;
 }
 
 .giveaway .wrapper {
@@ -602,8 +602,8 @@ section {
           align-items: center;
 }
 .natureContainer .natureImg img {
-  -webkit-box-shadow: -30px 30px 0px -7px #FFD300;
-          box-shadow: -30px 30px 0px -7px #FFD300;
+  -webkit-box-shadow: -25px 25px 0px -7px #FFD300;
+          box-shadow: -25px 25px 0px -7px #FFD300;
 }
 .natureContainer .natureText {
   width: calc(75% - 100px);

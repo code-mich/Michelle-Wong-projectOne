@@ -10,7 +10,7 @@
     position: relative;
     top: -55%;
     right: -5%;
-    box-shadow: 25px 25px 0px -7px $accents;
+    box-shadow: $rightShadow;
     .nameEmail {
         display: flex;
         flex-direction: row;
