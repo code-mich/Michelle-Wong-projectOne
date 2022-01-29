@@ -135,3 +135,25 @@ section {
         justify-content: space-between;
     }
 }
+
+// CONTACT PAGE STYLES START
+
+.infoContact {
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.contactInfo {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .socialIcons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

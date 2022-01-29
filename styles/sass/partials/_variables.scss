@@ -32,3 +32,13 @@ $textColor: #FFFFFF;
 $primaryBody: #2B331B;
 // almost black
 $secondaryBody: #171B0E;
+
+// HEADER MIXIN
+
+@mixin headerImg($imgLink) {
+    background-image: $imgLink;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 268px;
+    position: relative;
+}

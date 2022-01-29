@@ -1,0 +1,54 @@
+
+.formContainer {
+    width: 75%;
+}
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: $secondaryBody;
+    position: relative;
+    top: -55%;
+    right: -5%;
+    box-shadow: 25px 25px 0px -7px $accents;
+    .nameEmail {
+        display: flex;
+        flex-direction: row;
+        .name {
+            width: calc(50% - 20px);
+            margin-right: 20px;
+        }
+        .email {
+            width: 50%;
+        }
+    }
+    input, textarea {
+        font-family: $bodyFont, "sans-serif";
+        padding: 25px;
+        margin-bottom: 50px;
+        background-color: $secondaryBody;
+        font-size: $baseFontSize;
+        color: $textColor;
+        opacity: 1;
+        line-height: 2.8rem;
+        letter-spacing: 0.1rem;
+        border: none;
+        &::placeholder {
+            font-size: $baseFontSize;
+            color: $textColor;
+            opacity: 1;
+            line-height: 2.8rem;
+            letter-spacing: 0.1rem;
+        }
+    }
+    input {
+        border-bottom: 2px solid $accents;
+    }
+    textarea {
+        border: 2px solid $accents;
+    }
+    button {
+        background-color: $accents;
+        color: $secondaryBody;
+    }
+}

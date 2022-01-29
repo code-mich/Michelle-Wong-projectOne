@@ -5,27 +5,34 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    li {
-        padding: 60px 30px 30px 0;
-        a {
-            padding-bottom: 3px;
-            color: $textColor;
-            &:hover,
-            &:focus {
-                border-bottom: 2px solid $accents;
+        li {
+            padding: 60px 30px 30px 0;
+            a {
+                padding-bottom: 3px;
+                color: $textColor;
+                &:hover,
+                &:focus {
+                    border-bottom: 2px solid $accents;
+                }
             }
         }
     }
-    }
+}
+
+// HEADER IMGS
+
+.indexHeader{
+    @include headerImg(url(../the-restaurant-mall-assets/home-header.jpg));
+}
+.contactHeader {
+    @include headerImg(url(../the-restaurant-mall-assets/contact-header.jpg));
+}
+
+.blogHeader {
+    @include headerImg(url(../the-restaurant-mall-assets/blog-header.jpg));
 }
 
 header {
-    background-image: url(../the-restaurant-mall-assets/home-header.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 268px;
-    position: relative;
-
     .headerContainer {
         display: flex;
         flex-direction: row;
@@ -48,38 +55,4 @@ header {
         flex-direction: column;
         flex-wrap: wrap;
     }
-    
-    // .headerContainer {
-    //     display: flex;
-    //     flex-direction: row;
-    //     flex-wrap: wrap;
-    //     justify-content: space-between;
-    //     h1 {
-    //         width: calc(50% - 40px);
-    //         padding: 40px 0;
-    //     }
-    //     .headerImg {
-    //         width: 50%;
-    //         position: absolute;
-    //         right: -55px;
-    //         bottom: -280px;
-    //         img {
-    //             transform: scale(0.88);
-    //         }
-    //     }
-    // }
-
 }
-
-// h1 {
-//     display: flex;
-//     flex-direction: column;
-//     span {
-//         background-color: $textColor;
-//         color: $secondaryBody;
-//         // &:nth-child(2) {
-//         // background-color: $textColor;
-//         // color: $secondaryBody;
-//         // }
-//     }
-// }
