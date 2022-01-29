@@ -157,3 +157,49 @@ section {
         flex-wrap: wrap;
     }
 }
+
+// BLOG PAGE STYLES START
+
+.blogMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    width: 63%;
+}
+
+.blogWrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.blogPost {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .blogText {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.blogComments {
+    display: flex;
+    flex-direction: column;
+    .commentSegment {
+        display: flex;
+        flex-direction: row;
+    }
+    .commentText {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+aside {
+    width: 25%;
+}
