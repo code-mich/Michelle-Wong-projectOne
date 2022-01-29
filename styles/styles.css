@@ -502,9 +502,7 @@ section {
           justify-content: space-between;
 }
 .burger .burgerContainer .burgerSegment {
-  width: calc(50% - 100px);
-  margin-left: 50px;
-  padding: 50px 0;
+  width: calc(50% - 50px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,32 +510,30 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.burger .burgerContainer .burgerSegment h2 {
-  position: relative;
-}
-.burger .burgerContainer .burgerSegment:nth-child(odd) {
-  margin-right: 50px;
-  width: calc(50% - 100px);
-  text-align: right;
-}
-.burger .burgerContainer .burgerSegment:nth-child(odd) button {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-.burger .burgerLeft {
+
+.burgerLeftFlex .burgerLeft {
   position: absolute;
   left: 0;
   top: -5%;
+}
+.burgerLeftFlex .burgerLeft img {
   -webkit-box-shadow: 30px 30px 0px -5px #FFD300;
           box-shadow: 30px 30px 0px -5px #FFD300;
 }
-.burger .burgerRight {
+
+.burgerRightFlex {
+  display: none;
+}
+.burgerRightFlex .burgerRight {
   position: absolute;
   right: 0;
   bottom: -5%;
+}
+.burgerRightFlex .burgerRight img {
   -webkit-box-shadow: -30px 30px 0px -5px #FFD300;
           box-shadow: -30px 30px 0px -5px #FFD300;
 }
