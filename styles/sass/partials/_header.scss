@@ -43,10 +43,10 @@ header {
             padding: 50px 0;
         }
         .headerImg {
-            width: 50%;
+            width: 53%;
             position: absolute;
             right: 0;
-            top: 35%;
+            top: 29%;
         }
     }
 
@@ -54,5 +54,13 @@ header {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+    }
+}
+
+.contactHeader,
+.blogHeader {
+    h2 {
+        font-weight: 600;
+        font-size: 6.9rem;
     }
 }
