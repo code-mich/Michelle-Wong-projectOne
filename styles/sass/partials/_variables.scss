@@ -44,3 +44,9 @@ $rightShadow: 25px 25px 0px -7px $accents;
     padding-bottom: 268px;
     position: relative;
 }
+
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+}

@@ -159,6 +159,23 @@ section {
 }
 
 // BLOG PAGE STYLES START
+.blogContainer,
+.rightContainer,
+.blogPost,
+.blogText,
+.blogComments,
+.commentText,
+.asideContainer,
+.asideText,
+.asideLinks {
+    @include flex(column);
+    justify-content: space-between;
+}
+
+.blogMain,
+.commentSegment {
+    @include flex(row);
+}
 
 .blogMain {
     display: flex;
@@ -202,4 +219,31 @@ section {
 
 aside {
     width: 25%;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+
+.asideContainer {
+    background-color: $secondaryBody;
+    padding: 0 25px 25px 25px;
+    .asideImg {
+        position: absolute;
+        left: 0;
+    }
+    .asideText {
+        padding-top: 500px;
+    }
+    h4 {
+        color: $accents;
+    }
+    a {
+        color: $textColor;
+    }
+    ul {
+        list-style: disc inside;
+        p {
+            display: inline;
+            padding: 10px;
+        }
+    }
 }

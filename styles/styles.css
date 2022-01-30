@@ -275,6 +275,7 @@ h4 {
 button {
   border: none;
   padding: 3px 0;
+  cursor: pointer;
 }
 
 .readMore {
@@ -674,6 +675,42 @@ section {
       flex-wrap: wrap;
 }
 
+.blogContainer,
+.rightContainer,
+.blogPost,
+.blogText,
+.blogComments,
+.commentText,
+.asideContainer,
+.asideText,
+.asideLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogMain,
+.commentSegment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .blogMain {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -754,6 +791,33 @@ section {
 
 aside {
   width: 25%;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+
+.asideContainer {
+  background-color: #171B0E;
+  padding: 0 25px 25px 25px;
+}
+.asideContainer .asideImg {
+  position: absolute;
+  left: 0;
+}
+.asideContainer .asideText {
+  padding-top: 500px;
+}
+.asideContainer h4 {
+  color: #FFD300;
+}
+.asideContainer a {
+  color: #FFFFFF;
+}
+.asideContainer ul {
+  list-style: disc inside;
+}
+.asideContainer ul p {
+  display: inline;
+  padding: 10px;
 }
 
 .formContainer {
