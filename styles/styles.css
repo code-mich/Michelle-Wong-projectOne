@@ -712,81 +712,44 @@ section {
 }
 
 .blogMain {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .rightContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 63%;
+  position: relative;
 }
-
-.blogWrapper {
-  width: 80%;
-  margin: 0 auto;
+.rightContainer h2,
+.rightContainer .dates {
+  color: #FFD300;
 }
-
-.blogPost {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.rightContainer .blogPost,
+.rightContainer .blogComments {
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
 }
-.blogPost .blogText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.rightContainer .blogImg {
+  -webkit-box-shadow: -25px 25px 0px -7px #FFD300;
+          box-shadow: -25px 25px 0px -7px #FFD300;
+  position: absolute;
+  top: -7%;
+  right: 0;
 }
-
-.blogComments {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.rightContainer .blogText {
+  border-left: 5px solid #FFD300;
+  border-bottom: 5px solid #FFD300;
+  padding: 40% 10% 10%;
 }
-.blogComments .commentSegment {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+.rightContainer .blogText .dates {
+  color: #FFFFFF;
 }
-.blogComments .commentText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.rightContainer .blogComments {
+  padding-top: 0;
+}
+.rightContainer .blogComments .blogWrapper {
+  width: 90%;
 }
 
 aside {
@@ -804,7 +767,7 @@ aside {
   left: 0;
 }
 .asideContainer .asideText {
-  padding-top: 500px;
+  padding-top: 450px;
 }
 .asideContainer h4 {
   color: #FFD300;

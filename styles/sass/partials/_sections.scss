@@ -178,44 +178,45 @@ section {
 }
 
 .blogMain {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 .rightContainer {
-    display: flex;
-    flex-direction: column;
     width: 63%;
-}
+    position: relative;
+    h2,
+    .dates {
+        color: $accents;
+    }
+    .blogPost,
+    .blogComments {
+    align-content: flex-end;
+    }
 
-.blogWrapper {
-    width: 80%;
-    margin: 0 auto;
-}
+    .blogImg {
+        box-shadow: $leftShadow;
+        position: absolute;
+        top: -7%;
+        right: 0;
+    }
 
-.blogPost {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     .blogText {
-        display: flex;
-        flex-direction: column;
+        border-left: 5px solid $accents;
+        border-bottom: 5px solid $accents;
+        padding: 40% 10% 10%;
+        .dates {
+            color: $textColor;
+        }
+    }
+
+    .blogComments {
+        padding-top: 0;
+        .blogWrapper {
+            width: 90%;
+        }
     }
 }
 
-.blogComments {
-    display: flex;
-    flex-direction: column;
-    .commentSegment {
-        display: flex;
-        flex-direction: row;
-    }
-    .commentText {
-        display: flex;
-        flex-direction: column;
-    }
-}
 
 aside {
     width: 25%;
@@ -231,7 +232,7 @@ aside {
         left: 0;
     }
     .asideText {
-        padding-top: 500px;
+        padding-top: 450px;
     }
     h4 {
         color: $accents;
