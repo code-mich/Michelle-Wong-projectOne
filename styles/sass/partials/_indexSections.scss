@@ -22,6 +22,14 @@ section {
         .aboutSegment {
             width: calc(50% - 75px);
             margin-left: 50px;
+            a {
+                color: $textColor;
+                &:hover,
+                &:focus {
+                    color: rgba($color: $textColor, $alpha: 0.7);
+                    transition: 0.3s;
+                }
+            }
             h2 {
                 position: relative;
             }

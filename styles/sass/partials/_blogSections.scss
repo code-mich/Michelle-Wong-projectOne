@@ -97,6 +97,11 @@ aside {
         p {
             display: inline;
             padding: 10px;
+            &:hover,
+            &:focus {
+                color: rgba($color: $textColor, $alpha: 0.7);
+                transition: 0.3s;
+            }
         }
     }
 }

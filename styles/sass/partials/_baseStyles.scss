@@ -42,19 +42,32 @@ button {
     border: none;
     padding: 3px 0;
     cursor: pointer;
+    background-color: $accents;
+    &:hover,
+    &:focus {
+        background-color: rgba($color: $textColor, $alpha: 0.9);
+        color: $secondaryAccents;
+        transition: 0.3s;
+    }
 }
 
 .readMore {
-    background-color: $accents;
     width: 170px;
-    // padding: 3px 0;
 }
+
 .findOutMore {
     color: $textColor;
     background-color: $secondaryAccents;
     width: 225px;
 }
 
+.submit {
+    color: $secondaryBody;
+}
+
+.postComment {
+    color: $primaryBody;
+}
 
 // footer
 

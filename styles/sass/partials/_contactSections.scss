@@ -18,5 +18,12 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        i {
+            &:hover,
+            &:focus {
+                color: $textColor;
+                transition: 0.3s;
+            }
+        }
     }
 }

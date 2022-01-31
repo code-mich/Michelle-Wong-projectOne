@@ -276,10 +276,16 @@ button {
   border: none;
   padding: 3px 0;
   cursor: pointer;
+  background-color: #FFD300;
+}
+button:hover, button:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #0F0F0F;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .readMore {
-  background-color: #FFD300;
   width: 170px;
 }
 
@@ -287,6 +293,14 @@ button {
   color: #FFFFFF;
   background-color: #0F0F0F;
   width: 225px;
+}
+
+.submit {
+  color: #171B0E;
+}
+
+.postComment {
+  color: #2B331B;
 }
 
 footer {
@@ -502,6 +516,14 @@ section {
   width: calc(50% - 75px);
   margin-left: 50px;
 }
+.about .aboutContainer .aboutSegment a {
+  color: #FFFFFF;
+}
+.about .aboutContainer .aboutSegment a:hover, .about .aboutContainer .aboutSegment a:focus {
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 .about .aboutContainer .aboutSegment h2 {
   position: relative;
 }
@@ -635,6 +657,11 @@ section {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.contactInfo .socialIcons i:hover, .contactInfo .socialIcons i:focus {
+  color: #FFFFFF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 
 .blogContainer,
 .rightContainer,
@@ -760,6 +787,11 @@ aside {
   display: inline;
   padding: 10px;
 }
+.asideContainer ul p:hover, .asideContainer ul p:focus {
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 
 .formContainer {
   width: 75%;
@@ -850,10 +882,6 @@ aside {
 .contactForm textarea {
   border: 2px solid #FFD300;
 }
-.contactForm button {
-  background-color: #FFD300;
-  color: #171B0E;
-}
 
 .commentForm {
   display: -webkit-box;
@@ -934,8 +962,4 @@ aside {
 }
 .commentForm textarea {
   border: 2px solid #FFD300;
-}
-.commentForm button {
-  background-color: #FFD300;
-  color: #2B331B;
 }
