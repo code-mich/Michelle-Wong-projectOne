@@ -452,11 +452,44 @@ header h1 {
 }
 
 section {
-  padding: 100px 0;
+  padding: 5% 0;
+}
+
+.aboutContainer,
+.burgerContainer,
+.natureContainer,
+.galleryContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.aboutSegment,
+.burgerSegment,
+.gallery .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section {
+  padding: 5% 0;
 }
 
 .about {
-  padding-top: 200px;
+  padding-top: 10%;
 }
 .about .aboutContainer {
   display: -webkit-box;
@@ -473,7 +506,7 @@ section {
           justify-content: space-evenly;
 }
 .about .aboutContainer .aboutSegment {
-  width: calc(50% - 100px);
+  width: calc(50% - 75px);
   margin-left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -489,8 +522,8 @@ section {
   position: relative;
 }
 .about .aboutContainer .aboutSegment:nth-child(odd) {
-  margin-right: 50px;
-  width: calc(50% - 100px);
+  margin-right: 25px;
+  width: calc(50% - 50px);
 }
 
 .fa-stack {
@@ -652,6 +685,8 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
