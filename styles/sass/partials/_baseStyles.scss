@@ -62,4 +62,7 @@ footer {
     text-align: center;
     background-color: $secondaryAccents;
     padding: 10px;
+    p {
+        padding-bottom: 0;
+    }
 }
