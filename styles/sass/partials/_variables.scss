@@ -49,4 +49,5 @@ $rightShadow: 25px 25px 0px -7px $accents;
     display: flex;
     flex-direction: $direction;
     flex-wrap: wrap;
+    justify-content: space-between;
 }

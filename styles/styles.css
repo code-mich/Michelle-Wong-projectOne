@@ -468,11 +468,14 @@ section {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .aboutSegment,
 .burgerSegment,
-.gallery .wrapper {
+.giveaway .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,25 +485,15 @@ section {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-section {
-  padding: 5% 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .about {
   padding-top: 10%;
 }
 .about .aboutContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -508,15 +501,6 @@ section {
 .about .aboutContainer .aboutSegment {
   width: calc(50% - 75px);
   margin-left: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 .about .aboutContainer .aboutSegment h2 {
   position: relative;
@@ -545,32 +529,8 @@ section {
   background-color: #171B0E;
   position: relative;
 }
-.burger .burgerContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.burger .burgerContainer .burgerSegment {
+.burger .burgerSegment {
   width: 44%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .burger .burgerLeft {
   position: relative;
@@ -595,16 +555,6 @@ section {
 }
 
 .giveaway .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -621,20 +571,6 @@ section {
   padding: 0;
 }
 
-.natureContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
 .natureContainer .natureImg {
   width: 25%;
   display: -webkit-box;
@@ -659,20 +595,6 @@ section {
 .gallery {
   background-color: #171B0E;
 }
-.gallery .galleryContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
 
 .infoContact {
   padding-bottom: 0;
@@ -685,8 +607,6 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -750,9 +670,6 @@ section {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.blogMain {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -799,9 +716,6 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .rightContainer .commentSegment .commentImg {
   -ms-flex-item-align: start;

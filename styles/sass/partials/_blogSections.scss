@@ -1,0 +1,102 @@
+// BLOG PAGE STYLES START
+.blogContainer,
+.rightContainer,
+.blogPost,
+.blogText,
+.blogComments,
+.commentText,
+.asideContainer,
+.asideText,
+.asideLinks {
+    @include flex(column);
+}
+
+.blogMain,
+.commentSegment {
+    @include flex(row);
+}
+
+.rightContainer {
+    width: 63%;
+    position: relative;
+    h2,
+    .dates {
+        color: $accents;
+    }
+    .blogPost,
+    .blogComments {
+    align-content: flex-end;
+    padding-bottom: 50px;
+    }
+
+    .blogImg {
+        box-shadow: $leftShadow;
+        position: absolute;
+        top: -7%;
+        right: 0;
+    }
+
+    .blogText {
+        border-left: 5px solid $accents;
+        border-bottom: 5px solid $accents;
+        padding: 45% 10% 10%;
+        .dates {
+            color: $textColor;
+            font-weight: 600;
+        }
+    }
+
+    .blogComments {
+        padding-top: 0;
+        .blogWrapper {
+            width: 90%;
+        }
+    }
+    .commentSegment {
+        padding: 2.5% 10% 0 0;
+        align-items: center;
+        .commentImg {
+            align-self: flex-start;
+            padding-top: 1%;
+        }
+        .commentText {
+            width: 85%;
+            padding-bottom: 5%;
+            .dates {
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}
+
+
+aside {
+    width: 25%;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+.asideContainer {
+    background-color: $secondaryBody;
+    padding: 0 25px 25px 25px;
+    .asideImg {
+        position: absolute;
+        left: 0;
+    }
+    .asideText {
+        padding-top: 450px;
+    }
+    h4 {
+        color: $accents;
+    }
+    a {
+        color: $textColor;
+    }
+    ul {
+        list-style: disc inside;
+        p {
+            display: inline;
+            padding: 10px;
+        }
+    }
+}

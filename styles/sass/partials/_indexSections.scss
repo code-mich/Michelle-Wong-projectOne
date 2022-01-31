@@ -11,6 +11,112 @@ section {
 
 .aboutSegment,
 .burgerSegment,
-.gallery .wrapper {
+.giveaway .wrapper {
     @include flex(column);
 }
+
+.about {
+    padding-top: 10%;
+    .aboutContainer {
+        justify-content: space-evenly;
+        .aboutSegment {
+            width: calc(50% - 75px);
+            margin-left: 50px;
+            h2 {
+                position: relative;
+            }
+            &:nth-child(odd) {
+                margin-right: 25px;
+                width: calc(50% - 50px);
+            }
+        }
+    }
+}
+
+// FONT AWESOME
+.fa-stack {
+    left: -65px;
+    bottom: -70px;
+    font-size: 2.4rem;
+}
+
+.fa-stack-1x {
+    color: $secondaryBody;
+    z-index: 10;
+}
+
+.fa-stack-2x {
+    color: $accents;
+}
+
+// BURGER SECTION
+
+.burger {
+    background-color: $secondaryBody;
+    position: relative;
+    .burgerSegment {
+        width: 44%;
+    }
+    .burgerLeft {
+        position: relative;
+        top: -30%;
+        left: 0%;
+        box-shadow: $rightShadow;
+    }
+    .leftText {
+        text-align: right;
+        padding-left: 25%;
+    }
+    .burgerRight {
+        position: relative;
+        bottom: -30%;
+        right: 0%;
+        box-shadow: $leftShadow;
+    }
+    .rightText {
+        padding-right: 25%;
+    }
+}
+    
+// GIVEAWAY STYLES
+.giveaway {
+    .wrapper {
+        align-items: center;
+    }
+    h2 {
+        color: $accents;
+        padding-top: 50px;
+    }
+    p {
+        width: 85%;
+    }
+}
+
+.storeImg {
+    padding: 0;
+}
+
+// NATURE STYLES
+.natureContainer {
+    .natureImg {
+        width: 25%;
+        display: flex;
+        align-items: center;
+        img {
+            box-shadow: $leftShadow
+        }
+    }
+    .natureText {
+        width: calc(75% - 100px);
+        margin-left: 100px;
+        h2 {
+            color: $accents;
+        }
+    }
+}
+
+// GALLERY STYLES
+.gallery {
+    background-color: $secondaryBody;
+}
+

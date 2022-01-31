@@ -140,16 +140,21 @@ section {
 .infoContact {
     padding-bottom: 0;
     .wrapper {
-        @include flex(row);
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
     }
 }
 
 .contactInfo {
     width: 25%;
-        @include flex(column);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     .socialIcons {
-        @include flex(row);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 
