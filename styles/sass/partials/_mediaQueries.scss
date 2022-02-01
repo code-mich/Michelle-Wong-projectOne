@@ -1,0 +1,138 @@
+@media (max-width: 1550px) {
+    .burgerSegment {
+        &:nth-child(odd) {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .indexHeader,
+    .contactHeader,
+    .blogHeader {
+        background-position: center;
+        background-size: cover;
+    }
+    .index .wrapper {
+        width: 90%;
+    }
+
+    header {
+        .headerImg {
+            top: 45%;
+        }
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    .burger {
+        .leftText {
+            padding-left: 5%;
+        }
+        .rightText {
+            padding-right: 5%;
+        }
+    }
+    .natureContainer {
+        justify-content: space-evenly;
+        margin-left: 5%;
+    }
+    .galleryImg {
+        &:nth-child(even) {
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    header {
+        .headerImg {
+            top: 55%;
+        }
+    }
+    .burger {
+        .burgerLeft {
+            top: -25%;
+        }
+        .burgerRight {
+            bottom: -20%;
+        }
+    }
+    .natureImg {
+        width: 30%;
+    }
+    .natureText {
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 950px) {
+    .mobileHeader {
+        display: block;
+    }
+    .desktopNav {
+        display: none;
+    }
+    h2 {
+        font-size: calc(4.5rem * 0.8);
+    }
+    h3 {
+        font-size: calc(4rem * 0.8);
+    }
+    h4 {
+        font-size: calc(2.5rem * 0.8);
+    }
+    p {
+        font-size: calc(2rem * 0.8);
+    }
+    button {
+        font-size: calc(2.24rem * 0.8);
+    }
+}
+
+@media (max-width: 800px) {
+    .burger {
+        .burgerContainer {
+            flex-direction: column;
+            align-content: center;
+            padding: 0 5%;
+            &:nth-child(even) {
+                flex-direction: column-reverse;
+            }
+        }
+        .burgerSegment {
+            width: 90%;
+            &:nth-child(odd) {
+                width: 90%;
+            }
+        }
+        .leftText,
+        .rightText {
+            text-align: center;
+        }
+        .burgerLeft,
+        .burgerRight {
+            position: static;
+            margin: 10% 0;
+            align-self: center;
+        }
+        .burgerSegment ~ .burgerSegment {
+            flex-direction: column-reverse;
+            margin: 5% 0;
+        }
+    }
+    .natureContainer {
+        margin-left: 0;
+    }
+    .natureImg {
+        width: 40%;
+    }
+    .natureText {
+        width: 50%;
+        margin-left: 5%;
+        h2 {
+            line-height: 4.98rem;
+        }
+    }
+}

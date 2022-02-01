@@ -10,12 +10,24 @@
     <script src="https://kit.fontawesome.com/f2dd5a1fe8.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="index">
     <!-- HEADER & NAV -->
     <header class="indexHeader">
         <div class="wrapper">
             <nav>
-                <ul>
+                <div class="mobileHeader">
+                    <label for="openMenu">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <input type="checkbox" id="openMenu">
+                    <ul class="mobileNav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <ul class="desktopNav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
@@ -26,7 +38,7 @@
             <div class="headerContainer">
                 <div class="headerText">
                     <h1>
-                        The <span>restaurant</span> mall
+                        The <span class="headSpan">restaurant</span> mall
                     </h1>
                 </div>
                 <div class="headerImg">

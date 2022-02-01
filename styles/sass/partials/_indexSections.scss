@@ -35,7 +35,7 @@ section {
             }
             &:nth-child(odd) {
                 margin-right: 25px;
-                width: calc(50% - 50px);
+                width: calc(50% - 75px);
             }
         }
     }
@@ -63,7 +63,7 @@ section {
     background-color: $secondaryBody;
     position: relative;
     .burgerSegment {
-        width: 44%;
+        width: 45%;
     }
     .burgerLeft {
         position: relative;
@@ -105,26 +105,27 @@ section {
 }
 
 // NATURE STYLES
-.natureContainer {
-    .natureImg {
-        width: 25%;
-        display: flex;
-        align-items: center;
-        img {
-            box-shadow: $leftShadow
-        }
+.natureImg {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    img {
+        box-shadow: $leftShadow
     }
-    .natureText {
-        width: calc(75% - 100px);
-        margin-left: 100px;
-        h2 {
-            color: $accents;
-        }
+}
+.natureText {
+    width: 65%;
+    margin-left: 10%;
+    h2 {
+        color: $accents;
     }
 }
 
 // GALLERY STYLES
 .gallery {
     background-color: $secondaryBody;
+    .galleryContainer {
+        flex-wrap: nowrap;
+    }
 }
 
