@@ -3,14 +3,15 @@ section {
 }
 
 .aboutContainer,
-.burgerContainer,
+.topSegment,
+.bottomSegment,
 .natureContainer,
 .galleryContainer {
     @include flex(row);
 }
 
 .aboutSegment,
-.burgerSegment,
+.burgerContainer,
 .giveaway .wrapper {
     @include flex(column);
 }
@@ -62,27 +63,38 @@ section {
 .burger {
     background-color: $secondaryBody;
     position: relative;
-    .burgerSegment {
-        width: 45%;
+
+    .topSegment {
+        justify-content: flex-end;
+        padding-bottom: 10%;
     }
-    .burgerLeft {
-        position: relative;
-        top: -30%;
-        left: 0%;
+
+    .bottomSegment {
+        justify-content: flex-start;
+    }
+
+    .burgerImg {
+        width: 42%;
+        position: absolute;
+        left: 0;
+        top: -5%;
         box-shadow: $rightShadow;
     }
-    .leftText {
+    .topText {
+        width: 55%;
+        padding-left: 15%;
+    }
+    .bottomText {
+        width: 55%;
+        padding-right: 15%;
         text-align: right;
-        padding-left: 25%;
     }
-    .burgerRight {
-        position: relative;
-        bottom: -30%;
-        right: 0%;
+    .newImg {
+        width: 42%;
+        position: absolute;
+        right: 0;
+        bottom: -5%;
         box-shadow: $leftShadow;
-    }
-    .rightText {
-        padding-right: 25%;
     }
 }
     
@@ -97,6 +109,9 @@ section {
     }
     p {
         width: 85%;
+    }
+    button {
+        margin-bottom: 10%;
     }
 }
 

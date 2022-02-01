@@ -12,21 +12,21 @@
 
 <body class="index">
     <!-- HEADER & NAV -->
+    <div class="mobileHeader">
+        <label for="openMenu">
+            <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" id="openMenu">
+        <ul class="mobileNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
     <header class="indexHeader">
         <div class="wrapper">
-            <nav>
-                <div class="mobileHeader">
-                    <label for="openMenu">
-                        <i class="fas fa-bars"></i>
-                    </label>
-                    <input type="checkbox" id="openMenu">
-                    <ul class="mobileNav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+            <nav class="desktopNavBar">
                 <ul class="desktopNav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -105,39 +105,37 @@
 
         <!-- BURGER SECTION -->
         <section class="burger">
-            <!-- <div class="wrapper"> -->
-            <div class="burgerContainer">
-                <div class="burgerSegment">
-                    <div class="burgerLeftFlex">
-                        <div class="burgerLeft">
+            <div class="wrapper">
+                <div class="burgerContainer">
+                    <div class="topSegment">
+                        <div class="burgerImg">
                             <img src="./the-restaurant-mall-assets/left-image.jpg" alt="Picture of burger and fries">
                         </div>
-                    </div> <!-- end of .burgerLeftFlex -->
-                    <div class="leftText">
-                        <h2>Try something new</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare
-                            condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex,
-                            porttitor nec iaculis at, consectetur vel</p>
-                        <a><button class="readMore">Read more</button></a>
-                    </div>
-                </div> <!-- end of .burgerSegment -->
+                        <!--end of .burgerImg -->
 
-                <div class="burgerSegment">
-                    <div class="rightText">
-                        <h2>Best burgers</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare
-                            condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex,
-                            porttitor nec iaculis at, consectetur vel</p>
-                        <a><button class="readMore">Read more</button></a>
-                    </div>
-                    <div class="burgerRightFlex">
-                        <div class="burgerRight">
+                        <div class="topText">
+                            <h3>Best burgers</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare
+                                condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex,
+                                porttitor nec iaculis at, consectetur vel</p>
+                            <a><button class="readMore">Read more</button></a>
+                        </div> <!-- end of .topText -->
+                    </div> <!-- end of .burgerSegment -->
+
+                    <div class="bottomSegment">
+                        <div class="bottomText">
+                            <h3>Try something new</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare
+                                condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex,
+                                porttitor nec iaculis at, consectetur vel</p>
+                            <a><button class="readMore">Read more</button></a>
+                        </div> <!-- end of .bottomText -->
+                        <div class="newImg">
                             <img src="./the-restaurant-mall-assets/right-image.jpg" alt="Picture of ">
-                        </div> <!-- end of .burgerRight -->
-                    </div>
-                </div> <!-- end of .burgerSegment -->
-            </div> <!-- end of .burgerContainer -->
-            <!-- </div> end of .wrapper -->
+                        </div> <!-- end of .newImg -->
+                    </div> <!-- end of .burgerSegment -->
+                </div> <!-- end of .burgerContainer -->
+            </div> <!-- end of .wrapper -->
         </section>
 
         <!-- GIVEAWAY SECTION -->
@@ -183,20 +181,20 @@
         <!-- GALLERY SECTION -->
         <section class="gallery">
             <div class="wrapper">
-                <div class="galleryContainer">
-                    <div class="galleryImg">
+                <ul class="galleryContainer">
+                    <li class="galleryImg">
                         <img src="./the-restaurant-mall-assets/gallery-image-1.jpg"
                             alt="picture of some hanging lights in a restaurant">
-                    </div> <!-- end of first .galleryImg -->
-                    <div class="galleryImg">
+                    </li> <!-- end of first .galleryImg -->
+                    <li class="galleryImg">
                         <img src="./the-restaurant-mall-assets/gallery-image-2.jpg"
                             alt="picture of a neon take away sign">
-                    </div> <!-- end of second .galleryImg -->
-                    <div class="galleryImg">
+                    </li> <!-- end of second .galleryImg -->
+                    <li class="galleryImg">
                         <img src="./the-restaurant-mall-assets/gallery-image-3.jpg"
                             alt="picture of bibimbap with an array of side dishes">
-                    </div> <!-- end of third .galleryImg -->
-                </div> <!-- end of .galleryContainer-->
+                    </li> <!-- end of third .galleryImg -->
+                </ul> <!-- end of .galleryContainer-->
             </div> <!-- end of .wrapper -->
         </section>
     </main>

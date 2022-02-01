@@ -525,7 +525,8 @@ section {
 }
 
 .aboutContainer,
-.burgerContainer,
+.topSegment,
+.bottomSegment,
 .natureContainer,
 .galleryContainer {
   display: -webkit-box;
@@ -543,7 +544,7 @@ section {
 }
 
 .aboutSegment,
-.burgerSegment,
+.burgerContainer,
 .giveaway .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -606,29 +607,41 @@ section {
   background-color: #171B0E;
   position: relative;
 }
-.burger .burgerSegment {
-  width: 45%;
+.burger .topSegment {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 10%;
 }
-.burger .burgerLeft {
-  position: relative;
-  top: -30%;
-  left: 0%;
+.burger .bottomSegment {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.burger .burgerImg {
+  width: 42%;
+  position: absolute;
+  left: 0;
+  top: -5%;
   -webkit-box-shadow: 25px 25px 0px -7px #FFD300;
           box-shadow: 25px 25px 0px -7px #FFD300;
 }
-.burger .leftText {
-  text-align: right;
-  padding-left: 25%;
+.burger .topText {
+  width: 55%;
+  padding-left: 15%;
 }
-.burger .burgerRight {
-  position: relative;
-  bottom: -30%;
-  right: 0%;
+.burger .bottomText {
+  width: 55%;
+  padding-right: 15%;
+  text-align: right;
+}
+.burger .newImg {
+  width: 42%;
+  position: absolute;
+  right: 0;
+  bottom: -5%;
   -webkit-box-shadow: -25px 25px 0px -7px #FFD300;
           box-shadow: -25px 25px 0px -7px #FFD300;
-}
-.burger .rightText {
-  padding-right: 25%;
 }
 
 .giveaway .wrapper {
@@ -642,6 +655,9 @@ section {
 }
 .giveaway p {
   width: 85%;
+}
+.giveaway button {
+  margin-bottom: 10%;
 }
 
 .storeImg {
@@ -1024,9 +1040,20 @@ aside {
   border: 2px solid #FFD300;
 }
 
-@media (max-width: 1550px) {
-  .burgerSegment:nth-child(odd) {
-    width: 50%;
+@media (max-width: 1400px) {
+  .burger .topText {
+    padding-left: 10%;
+  }
+  .burger .bottomText {
+    padding-right: 10%;
+  }
+
+  .galleryImg {
+    margin-left: 2%;
+  }
+
+  .galleryContainer:first-child {
+    margin-left: 0;
   }
 }
 @media (max-width: 1250px) {
@@ -1049,23 +1076,11 @@ aside {
     font-size: 4rem;
   }
 
-  .burger .leftText {
-    padding-left: 5%;
-  }
-  .burger .rightText {
-    padding-right: 5%;
-  }
-
   .natureContainer {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     margin-left: 5%;
-  }
-
-  .galleryImg:nth-child(even) {
-    margin-left: 2%;
-    margin-right: 2%;
   }
 }
 @media (max-width: 1050px) {
@@ -1073,11 +1088,11 @@ aside {
     top: 55%;
   }
 
-  .burger .burgerLeft {
-    top: -25%;
+  .burger h3 {
+    font-size: 3.5rem;
   }
-  .burger .burgerRight {
-    bottom: -20%;
+  .burger .topSegment {
+    padding-bottom: 5%;
   }
 
   .natureImg {
@@ -1118,46 +1133,6 @@ aside {
   }
 }
 @media (max-width: 800px) {
-  .burger .burgerContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    padding: 0 5%;
-  }
-  .burger .burgerContainer:nth-child(even) {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .burger .burgerSegment {
-    width: 90%;
-  }
-  .burger .burgerSegment:nth-child(odd) {
-    width: 90%;
-  }
-  .burger .leftText,
-.burger .rightText {
-    text-align: center;
-  }
-  .burger .burgerLeft,
-.burger .burgerRight {
-    position: static;
-    margin: 10% 0;
-    -ms-flex-item-align: center;
-        align-self: center;
-  }
-  .burger .burgerSegment ~ .burgerSegment {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    margin: 5% 0;
-  }
-
   .natureContainer {
     margin-left: 0;
   }
