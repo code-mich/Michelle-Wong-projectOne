@@ -952,7 +952,7 @@ aside {
   left: 0;
 }
 .asideContainer .asideText {
-  padding-top: 450px;
+  padding-top: 140%;
 }
 .asideContainer h4 {
   color: #FFD300;
@@ -1159,6 +1159,10 @@ aside {
   .galleryContainer:first-child {
     margin-left: 0;
   }
+
+  .asideContainer .asideText {
+    padding-top: 160%;
+  }
 }
 @media (max-width: 1250px) {
   .indexHeader,
@@ -1187,6 +1191,17 @@ aside {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     margin-left: 5%;
+  }
+
+  .rightContainer .commentSegment .commentText {
+    width: 80%;
+  }
+
+  .asideContainer .asideImg {
+    width: 29%;
+  }
+  .asideContainer .asideText {
+    padding-top: 150%;
   }
 }
 @media (max-width: 1080px) {
@@ -1299,6 +1314,20 @@ aside {
   .formContainer .contactForm {
     position: static;
   }
+
+  .rightContainer h2 {
+    line-height: 5.98rem;
+  }
+  .rightContainer .commentSegment .commentText {
+    width: 75%;
+  }
+
+  aside {
+    margin: 0;
+  }
+  aside h4 {
+    line-height: 3.8rem;
+  }
 }
 @media (max-width: 800px) {
   h2 {
@@ -1337,6 +1366,17 @@ aside {
   }
   .natureText h2 {
     line-height: 4.98rem;
+  }
+
+  .rightContainer .blogImg {
+    -webkit-box-shadow: -20px 20px 0px -8px #FFD300;
+            box-shadow: -20px 20px 0px -8px #FFD300;
+  }
+  .rightContainer .blogText {
+    padding: 35% 5% 5%;
+  }
+  .rightContainer .blogComments .blogWrapper {
+    width: 100%;
   }
 }
 @media (max-width: 600px) {
@@ -1468,6 +1508,50 @@ aside {
   .contactForm .nameEmail .email {
     width: 100%;
   }
+
+  .blogMain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  aside {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .asideContainer {
+    padding: 10%;
+  }
+  .asideContainer .asideImg {
+    position: static;
+    width: 50%;
+  }
+  .asideContainer .asideText {
+    padding-top: 5%;
+  }
+
+  .rightContainer {
+    width: 100%;
+  }
+  .rightContainer .blogImg {
+    position: static;
+  }
+  .rightContainer .blogText {
+    padding: 10%;
+  }
+  .rightContainer .blogComments {
+    padding-left: 10%;
+  }
 }
 @media (max-width: 480px) {
   h1 {
@@ -1499,5 +1583,27 @@ aside {
   .contactInfo .socialIcons .fab {
     font-size: 4.4rem;
     padding-right: 0;
+  }
+
+  .rightContainer .blogComments {
+    padding-left: 5%;
+  }
+  .rightContainer .commentForm .nameEmail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .rightContainer .commentForm .nameEmail .name,
+.rightContainer .commentForm .nameEmail .email {
+    width: 100%;
   }
 }

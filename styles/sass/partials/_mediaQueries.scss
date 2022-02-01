@@ -15,6 +15,11 @@
             margin-left: 0;
         }
     }
+    .asideContainer {
+        .asideText {
+            padding-top: 160%;
+        }
+    }
 }
 @media (max-width: 1250px) {
     .indexHeader,
@@ -40,6 +45,21 @@
     .natureContainer {
         justify-content: space-evenly;
         margin-left: 5%;
+    }
+    .rightContainer {
+        .commentSegment {
+            .commentText {
+                width: 80%;
+            }
+        }
+}
+    .asideContainer {
+        .asideImg {
+            width: 29%;
+        }
+        .asideText {
+            padding-top: 150%;
+        }
     }
 }
 
@@ -129,6 +149,22 @@
             position: static;
         }
     }
+    .rightContainer {
+        h2 {
+            line-height: 5.98rem;
+        }
+        .commentSegment {
+            .commentText {
+                width: 75%;
+            }
+        }
+    }
+    aside {
+        margin: 0;
+        h4 {
+            line-height: 3.8rem;
+        }
+    }
 }
 
 @media (max-width: 800px) {
@@ -162,6 +198,19 @@
         margin-left: 5%;
         h2 {
             line-height: 4.98rem;
+        }
+    }
+    .rightContainer {
+        .blogImg {
+            box-shadow: -20px 20px 0px -8px $accents;
+        }
+        .blogText {
+            padding: 35% 5% 5%;
+        }
+        .blogComments {
+            .blogWrapper {
+                width: 100%;
+            }
         }
     }
 }
@@ -248,6 +297,35 @@
             }
         }
     }
+    .blogMain {
+        @include flex(column);
+    }
+    aside {
+        width: 100%;
+        padding-top: 0;
+    }
+    .asideContainer {
+        padding: 10%;
+        .asideImg {
+            position: static;
+            width: 50%;
+        }
+        .asideText {
+            padding-top: 5%;
+        }
+    }
+    .rightContainer {
+        width: 100%;
+        .blogImg {
+            position: static;
+        }
+        .blogText {
+            padding: 10%;
+        }
+        .blogComments {
+            padding-left: 10%;
+        }
+    }
 }
 
 @media (max-width: 480px) {
@@ -276,6 +354,20 @@
             .fab {
                 font-size: 4.4rem;
                 padding-right: 0;
+            }
+        }
+    }
+    .rightContainer {
+        .blogComments {
+            padding-left: 5%;
+        }
+        .commentForm {
+            .nameEmail {
+                @include flex(column);
+                .name,
+                .email {
+                    width: 100%;
+                }
             }
         }
     }
