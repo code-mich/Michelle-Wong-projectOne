@@ -1,6 +1,6 @@
 // NAV STYLES
 
-nav {
+.desktopNavBar {
     ul {
     display: flex;
     flex-direction: row;
@@ -17,66 +17,6 @@ nav {
             }
         }
     }
-}
-
-.mobileHeader {
-    display: none;
-    position: relative;
-    top: 25px;
-}
-
-label {
-    position: absolute;
-    left: 0;
-    .fa-bars {
-        font-size: 5rem;
-        color: $textColor;
-        position: fixed;
-        padding: 2%;
-        z-index: 30;
-    }
-}
-
-input[type="checkbox"] {
-    position: relative;
-    width: 7rem;
-    height: 7rem;
-    left: 0;
-    opacity: 0;
-    z-index: 30;
-    cursor: pointer;
-}
-
-.mobileNav {
-    flex-direction: column;
-    position: absolute;
-    left: 0;
-    width: 20%;
-    display: none;
-    li {
-        background-color: $secondaryAccents;
-        text-align: center;
-        padding: 10%;
-        &:hover,
-        &:focus {
-            background-color: $accents;
-            color: $secondaryAccents;
-            a {
-                color: $secondaryAccents;
-            }
-        }
-    }
-    a {
-        &:hover,
-        &:focus {
-            border-bottom: none;
-        }
-    }
-}
-
-input:checked ~ .mobileNav {
-    display: block;
-    transition: 1s;
 }
 
 // HEADER IMGS

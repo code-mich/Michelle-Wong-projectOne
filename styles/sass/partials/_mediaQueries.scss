@@ -41,7 +41,7 @@
     }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1080px) {
     header {
         .headerImg {
             top: 55%;
@@ -49,7 +49,7 @@
     }
     .burger {
         h3 {
-            font-size: 3.5rem;
+            font-size: calc(4rem * 0.8);
         }
         .topSegment {
             padding-bottom: 5%;
@@ -64,10 +64,12 @@
 }
 
 @media (max-width: 950px) {
-    .mobileHeader {
-        display: block;
+    .mobileNavBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
-    .desktopNav {
+    .desktopNavBar {
         display: none;
     }
     h2 {
@@ -85,9 +87,45 @@
     button {
         font-size: calc(2.24rem * 0.8);
     }
+    .burger {
+        .burgerContainer {
+            padding: 0;
+        }
+        .burgerImg {
+            top: 0;
+        }
+        .topText {
+            padding-left: 5%;
+        }
+        .bottomText {
+            padding-right: 1%;
+        }
+        .newImg {
+            bottom: 0;
+        }
+    }
 }
 
 @media (max-width: 800px) {
+    h2 {
+        line-height: 5.98rem;
+    }
+    .about {
+        padding-bottom: 10%;
+        p {
+            padding-bottom: 0;
+        }
+    }
+    .burger {
+        .burgerImg {
+            top: 10%;
+            box-shadow: 20px 20px 0px -8px $accents;
+        }
+        .newImg {
+            bottom: 10%;
+            box-shadow: -20px 20px 0px -8px $accents;
+        }
+    }
     .natureContainer {
         margin-left: 0;
     }
@@ -100,5 +138,94 @@
         h2 {
             line-height: 4.98rem;
         }
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        .headerImg {
+            top: 70%;
+        }
+    }
+    .about {
+        .aboutContainer {
+            @include flex(column);
+        }
+        .aboutSegment {
+            width: 100%;
+            margin: 0 5% 0 10%;
+            &:nth-child(odd) {
+                margin-right: 5%;
+                width: 100%;
+            }
+        }
+    }
+    .burger {
+        .burgerContainer {
+            padding: 5% 0;
+        }
+        .topSegment,
+        .bottomSegment {
+            @include flex(column);
+            padding: 5% 0;
+        }
+        .burgerImg,
+        .newImg {
+            position: static;
+            width: 100%;
+            margin-bottom: 10%;
+        }
+        .topText,
+        .bottomText {
+            width: 100%;
+            padding: 0;
+            text-align: center;
+        }
+        .bottomSegment {
+            flex-direction: column-reverse;
+        }
+    }
+    .giveaway {
+        text-align: center;
+    }
+    .nature {
+        .natureContainer {
+            @include flex(column);
+        }
+        .natureImg {
+            width: 50%;
+            margin: 0 auto;
+            img {
+                box-shadow: -20px 20px 0px -8px $accents;
+            }
+        }
+        .natureText {
+            padding-top: 10%;
+            margin-left: 0;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 4.9rem;
+    }
+    .about {
+        .aboutSegment {
+            width: 95%;
+            &:nth-child(odd) {
+                width: 95%;
+            }
+        }
+    }
+    .fa-stack {
+        left: -55px;
+        bottom: -52px;
+        font-size: 2rem;
+    }
+    .natureContainer {
+        padding-bottom: 10%;
     }
 }

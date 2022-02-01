@@ -1,0 +1,137 @@
+.mobileNavBar {
+    display: none;
+    position: sticky;
+    top: 0;
+    background-color: $secondaryAccents;
+    height: 7.5vh;
+    padding: 3% 5%;
+    z-index: 20;
+}
+
+.restaurantLogo {
+    width: 30%;
+    a {
+        color: $textColor;
+    }
+    h3 {
+        display: inline;
+    }
+}
+
+.mobileHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 90%;
+    margin: 0 auto;
+    nav {
+        justify-content: flex-end;
+    }
+}
+
+label {
+    position: relative;
+    .fa-bars {
+        font-size: 5rem;
+        color: $textColor;
+        padding: 2%;
+        z-index: 20;
+    }
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    right: 3%;
+    top: 15%;
+    opacity: 0;
+    z-index: 30;
+    cursor: pointer;
+    &:checked ~ .mobileNav {
+        right: 0;
+        transition: 0.5s ease;
+    }
+    &:not(:checked) ~ .mobileNav {
+        right: -500px;
+        transition: 0.8s ease;
+    }
+}
+
+.mobileNav {
+    flex-direction: column;
+    position: absolute;
+    top: 81px;
+    width: 50%;
+    li {
+        background-color: $secondaryAccents;
+        text-align: center;
+        padding: 10%;
+        a {
+            color: $textColor;
+        }
+        &:hover,
+        &:focus {
+            background-color: $accents;
+            color: $secondaryAccents;
+            a {
+                color: $secondaryAccents;
+            }
+        }
+    }
+    a {
+        &:hover,
+        &:focus {
+            border-bottom: none;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .mobileNavBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .desktopNavBar {
+        display: none;
+    }
+    h2 {
+        font-size: calc(4.5rem * 0.8);
+    }
+    h3 {
+        font-size: calc(4rem * 0.8);
+    }
+    h4 {
+        font-size: calc(2.5rem * 0.8);
+    }
+    p {
+        font-size: calc(2rem * 0.8);
+    }
+    button {
+        font-size: calc(2.24rem * 0.8);
+    }
+}
+
+@media (max-width: 800px) {
+    .burger {
+        .burgerContainer {
+            flex-direction: column;
+            align-content: center;
+            padding: 0 5%;
+        }
+    }
+    .natureContainer {
+        margin-left: 0;
+    }
+    .natureImg {
+        width: 40%;
+    }
+    .natureText {
+        width: 50%;
+        margin-left: 5%;
+        h2 {
+            line-height: 4.98rem;
+        }
+    }
+}
