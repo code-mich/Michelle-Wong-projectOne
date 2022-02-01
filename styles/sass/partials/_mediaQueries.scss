@@ -23,7 +23,9 @@
         background-position: center;
         background-size: cover;
     }
-    .index .wrapper {
+    .indexPage .wrapper,
+    .contactPage .wrapper,
+    .blogPage .wrapper {
         width: 90%;
     }
 
@@ -102,6 +104,29 @@
         }
         .newImg {
             bottom: 0;
+        }
+    }
+    .infoContact {
+        .wrapper {
+            @include flex(column-reverse);
+        }
+    }
+    .contactInfo {
+        width: 100%;
+        text-align: center;
+        .socialIcons {
+            justify-content: center;
+            .fab {
+                font-size: 4.4rem;
+                padding-right: 30px;
+            }
+        }
+    }
+    .formContainer {
+        width: 100%;
+        padding-bottom: 10%;
+        .contactForm {
+            position: static;
         }
     }
 }
@@ -206,6 +231,23 @@
             text-align: center;
         }
     }
+    .formContainer {
+        padding-bottom: 50px;
+    }
+    .contactForm {
+        padding: 25px;
+        box-shadow: 20px 20px 0px -8px $accents;
+        .nameEmail {
+            @include flex(column);
+            .name {
+                width: 100%;
+                margin-right: 0;
+            }
+            .email {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media (max-width: 480px) {
@@ -228,4 +270,14 @@
     .natureContainer {
         padding-bottom: 10%;
     }
+    .contactInfo {
+        .socialIcons {
+            justify-content: space-evenly;
+            .fab {
+                font-size: 4.4rem;
+                padding-right: 0;
+            }
+        }
+    }
+
 }

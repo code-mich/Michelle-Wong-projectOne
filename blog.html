@@ -10,12 +10,31 @@
     <script src="https://kit.fontawesome.com/f2dd5a1fe8.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="blogPage">
     <!-- HEADER & NAV -->
+    <nav class="mobileNavBar">
+        <div class="restaurantLogo">
+            <a href="index.html">
+                <h3>restaurant</h3>
+            </a>
+        </div>
+        <div class="mobileHeader">
+            <label for="openMenu">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" id="openMenu">
+            <ul class="mobileNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
     <header class="blogHeader">
         <div class="wrapper">
-            <nav>
-                <ul>
+            <nav class="desktopNavBar">
+                <ul class="desktopNav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
